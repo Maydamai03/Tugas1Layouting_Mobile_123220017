@@ -30,13 +30,12 @@ class ProfileScreen extends StatelessWidget {
       ),
       drawer: Drawer(
         child: Container(
-          color: const Color.fromARGB(
-              255, 0, 0, 0), // Ubah warna background drawer
+          color: const Color.fromARGB(255, 0, 0, 0),
           // decoration: BoxDecoration(
           //   image: DecorationImage(
           //     image: NetworkImage(
           //         "https://images.unsplash.com/photo-1558350283-8269d86681f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-          //     fit: BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+          //     fit: BoxFit.cover,
           //   ),
           // ),
           child: ListView(
@@ -44,13 +43,12 @@ class ProfileScreen extends StatelessWidget {
               DrawerHeader(
                 // decoration: BoxDecoration(color: Colors.black),
                 // decoration: BoxDecoration(
-                //     color: Colors.transparent), // Agar background tetap gambar
+                //     color: Colors.transparent),
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
                         "https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-                    fit:
-                        BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+                    fit: BoxFit.cover,
                   ),
                 ),
                 child: Column(
@@ -151,7 +149,7 @@ class ProfileScreen extends StatelessWidget {
           children: [
             // Card 1: Foto, Nama, NIM
             ProfileCard(
-              imagePath: "assets/images/may.jpg", // Path dari asset
+              imagePath: "assets/images/may.jpg",
               name: "Jagad Damai",
               nim: "123220017",
             ),
@@ -290,7 +288,7 @@ class InfoRow extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 80, // Lebar tetap untuk judul
+            width: 80,
             child: Text(
               "$title:",
               style: TextStyle(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart'; // Impor file login_screen.dart
+import 'login_screen.dart';
 import 'aritmatika.dart';
 import 'tipeangka.dart';
 import 'totalangka.dart';
@@ -30,13 +30,12 @@ class HomeScreen extends StatelessWidget {
       ),
       drawer: Drawer(
         child: Container(
-          color: const Color.fromARGB(
-              255, 0, 0, 0), // Ubah warna background drawer
+          color: const Color.fromARGB(255, 0, 0, 0),
           // decoration: BoxDecoration(
           //   image: DecorationImage(
           //     image: NetworkImage(
           //         "https://images.unsplash.com/photo-1558350283-8269d86681f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-          //     fit: BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+          //     fit: BoxFit.cover,
           //   ),
           // ),
           child: ListView(
@@ -44,13 +43,12 @@ class HomeScreen extends StatelessWidget {
               DrawerHeader(
                 // decoration: BoxDecoration(color: Colors.black),
                 // decoration: BoxDecoration(
-                //     color: Colors.transparent), // Agar background tetap gambar
+                //     color: Colors.transparent),
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
                         "https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-                    fit:
-                        BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+                    fit: BoxFit.cover,
                   ),
                 ),
                 child: Column(
@@ -145,20 +143,17 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start, // Mulai dari atas
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(height: 50), // Memberi jarak dari atas
+          SizedBox(height: 50),
           Center(
             child: Stack(
               alignment: Alignment.center,
               children: [
-                // Gambar latar belakang
                 Padding(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 20), // Atur margin kiri dan kanan
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Container(
-                    width: double
-                        .infinity, // Agar mengikuti lebar parent dengan margin
+                    width: double.infinity,
                     height: 200,
                     decoration: BoxDecoration(
                       image: DecorationImage(
@@ -170,25 +165,20 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 Padding(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 20), // Atur margin kiri dan kanan
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Container(
-                    width: double
-                        .infinity, // Agar mengikuti lebar parent dengan margin
+                    width: double.infinity,
                     height: 200,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Colors.black
-                          .withOpacity(0.5), // Background transparan
+                      color: Colors.black.withOpacity(0.5),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
                       "WELCOME, to OUR DASHBOARD",
                       style: TextStyle(
-                        color: const Color.fromARGB(
-                            255, 255, 255, 255), // Warna teks putih
+                        color: const Color.fromARGB(255, 255, 255, 255),
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                       ),
@@ -196,18 +186,18 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Teks di atas gambar
               ],
             ),
           ),
-          SizedBox(height: 50), // Jarak sebelum garis
+          SizedBox(height: 50),
+          // garis pemisah
           Divider(
-            color: Colors.grey, // Warna garis
-            thickness: 1.5, // Ketebalan garis
-            indent: 50, // Jarak dari kiri
-            endIndent: 50, // Jarak dari kanan
+            color: Colors.grey,
+            thickness: 1.5,
+            indent: 50,
+            endIndent: 50,
           ),
-          SizedBox(height: 20), // Jarak setelah garis
+          SizedBox(height: 20),
         ],
       ),
     );

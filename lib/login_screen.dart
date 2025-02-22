@@ -18,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(builder: (context) => HomeScreen()),
       );
     } else {
-      _showLoginFailedDialog(); // Tampilkan popup jika login gagal
+      _showLoginFailedDialog(); // popup jika login gagal
     }
   }
 
@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.pop(context); // Tutup popup
+                Navigator.pop(context);
               },
               child: Text("Kembali"),
             ),
@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Padding(
             padding: EdgeInsets.all(20),
             child: SizedBox(
-              width: 300, // Lebar kotak login
+              width: 300,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -69,11 +69,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       labelText: "Username",
                       labelStyle: TextStyle(
-                          color: const Color.fromARGB(
-                              255, 52, 1, 61)), // Warna label (placeholder)
-                      filled: true, // Aktifkan latar belakang
-                      fillColor: const Color.fromARGB(
-                          255, 238, 238, 238), // Warna latar belakang TextField
+                          color: const Color.fromARGB(255, 52, 1, 61)),
+                      filled: true, //
+                      fillColor: const Color.fromARGB(255, 238, 238, 238),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                       prefixIcon: Icon(Icons.person),
@@ -85,11 +83,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: InputDecoration(
                       labelText: "Password",
                       labelStyle: TextStyle(
-                          color: const Color.fromARGB(
-                              255, 52, 1, 61)), // Warna label (placeholder)
-                      filled: true, // Aktifkan latar belakang
-                      fillColor: const Color.fromARGB(
-                          255, 238, 238, 238), // Warna latar belakang TextField
+                          color: const Color.fromARGB(255, 52, 1, 61)),
+                      filled: true,
+                      fillColor: const Color.fromARGB(255, 238, 238, 238),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                       prefixIcon: Icon(Icons.lock),
@@ -100,10 +96,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   ElevatedButton(
                     onPressed: _login,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(
-                          255, 84, 24, 92), // Warna background tombol
-                      foregroundColor: const Color.fromARGB(
-                          255, 255, 255, 255), // Warna teks tombol
+                      backgroundColor: const Color.fromARGB(255, 84, 24, 92),
+                      foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                       minimumSize: Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -111,10 +105,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       "LOGIN",
                       style: TextStyle(
-                        fontSize: 14, // Ukuran font
-                        fontWeight: FontWeight.bold, // Membuat teks bold
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
                         // fontFamily:
-                        //     "Roboto", // Mengubah font (opsional, pastikan font ada di proyek)
+                        //     "Roboto", //
                       ),
                     ),
                   ),

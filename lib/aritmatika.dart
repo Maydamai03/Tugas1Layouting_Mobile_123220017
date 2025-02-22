@@ -51,13 +51,12 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
       ),
       drawer: Drawer(
         child: Container(
-          color: const Color.fromARGB(
-              255, 0, 0, 0), // Ubah warna background drawer
+          color: const Color.fromARGB(255, 0, 0, 0),
           // decoration: BoxDecoration(
           //   image: DecorationImage(
           //     image: NetworkImage(
           //         "https://images.unsplash.com/photo-1558350283-8269d86681f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-          //     fit: BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+          //     fit: BoxFit.cover,
           //   ),
           // ),
           child: ListView(
@@ -65,13 +64,12 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
               DrawerHeader(
                 // decoration: BoxDecoration(color: Colors.black),
                 // decoration: BoxDecoration(
-                //     color: Colors.transparent), // Agar background tetap gambar
+                //     color: Colors.transparent),
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
                         "https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-                    fit:
-                        BoxFit.cover, // Menyesuaikan ukuran gambar dengan layar
+                    fit: BoxFit.cover,
                   ),
                 ),
                 child: Column(
@@ -241,15 +239,14 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                   onPressed: subtract,
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                    backgroundColor: const Color.fromARGB(
-                        255, 255, 255, 255), // Warna background tombol
+                    backgroundColor: const Color.fromARGB(255, 255, 255, 255),
                     foregroundColor: const Color.fromARGB(255, 84, 24, 92),
                   ),
                   child: Text(
                     "-",
                     style: TextStyle(
-                      fontSize: 30, // Ukuran font
-                      fontWeight: FontWeight.bold, // Membuat teks bold
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                       // fontFamily:
                       //     "Roboto",
                     ),
